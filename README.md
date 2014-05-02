@@ -2,6 +2,16 @@
 
 Some [Sass](http://sass-lang.com/) helper mixins I use
 
+## Install
+
+Available via [bower](http://bower.io/)
+
+```
+bower install sass-helpers
+```
+
+## Mixins
+
 ### placeholder { @content }
 
 ```css
