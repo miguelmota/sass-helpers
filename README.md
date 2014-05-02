@@ -12,12 +12,26 @@ bower install sass-helpers
 
 ## Mixins
 
+### respond-to((mobile | tablet | desktop)) { @content }
+
+```css
+@include repond-to(mobile) {
+    color: black;
+}
+```
+
 ### placeholder { @content }
 
 ```css
 @include placeholder {
     color: black;
 }
+```
+
+### triangle(size, color, direction, trim, transparent)
+
+```css
+@include triangle(24px, black, up, false, false);
 ```
 
 ## License
