@@ -20,12 +20,24 @@ bower install sass-helpers
 }
 ```
 
+### vendor-prefix(property, value)
+
+```css
+@include vendor-prefix(border-radius, 5px)
+```
+
 ### placeholder { @content }
 
 ```css
 @include placeholder {
     color: black;
 }
+```
+
+### ellipsis(font-size, line-height, lines-to-show)
+
+```css
+@include ellipsis(18px, 1.2, 3)
 ```
 
 ### triangle(size, color, direction, trim, transparent)
