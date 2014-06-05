@@ -1,17 +1,26 @@
 @import 'compass';
 
 $break-mobile: 640px;
+$break-tablet: 768px;
 $break-desktop: 1024px;
 
 @mixin respond-to($media) {
     @if $media == mobile {
-        @media only screen and (max-width: $break-mobile) { @content; }
+        @media only screen
+            and (max-width: $break-mobile) { @content; }
     }
     @else if $media == tablet {
-        @media only screen and (min-width: $break-mobile + 1) and (max-width: $break-desktop - 1) { @content; }
+        @media only screen
+            and (min-width: $break-mobile + 1)
+            and (max-width: $break-desktop - 1) { @content; }
+        @media only screen
+            and (min-device-width : $break-mobile)
+            and (max-device-width : $break-desktop)
+            and (-webkit-min-device-pixel-ratio: 2) { @content }
     }
     @else if $media == desktop {
-        @media only screen and (min-width: $break-desktop) { @content; }
+        @media only screen
+            and (min-width: $break-desktop) { @content; }
     }
 }
 
@@ -104,3 +113,11 @@ $break-desktop: 1024px;
     @content;
   }
 }
+
+@mixin autofill() {
+    input:-webkit-autofill {
+        -webkit-box-shadow:0 0 0 50px #2b2b2b inset;
+        -webkit-text-fill-color: #999;
+    }
+}
+
