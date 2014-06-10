@@ -139,3 +139,6 @@ $break-desktop: 1024px;
     }
 }
 
+@function half($n) {
+   @return ($n / 2);
+}

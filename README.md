@@ -59,6 +59,14 @@ bower install sass-helpers
 }
 ```
 
+### half(number)
+
+```css
+.foo {
+    width: half(32px); // 16px
+}
+```
+
 ## License
 
 Released under the MIT License.
