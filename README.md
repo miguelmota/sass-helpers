@@ -67,6 +67,12 @@ bower install sass-helpers
 }
 ```
 
+## Testing
+
+```
+compass watch
+```
+
 ## License
 
 Released under the MIT License.

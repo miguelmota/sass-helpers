@@ -39,3 +39,15 @@ code {
         color: #000;
     }
 }
+
+$full-width: 64px;
+
+.full {
+    border: 4px solid blue;
+    width: $full-width;
+}
+
+.half {
+    border: 4px solid red;
+    width: half($full-width);
+}

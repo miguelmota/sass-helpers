@@ -9,19 +9,19 @@ code {
   margin-bottom: 40px;
 }
 
-/* line 19, ../sass/helpers.scss */
+/* line 46, ../sass/helpers.scss */
 .placeholder::-webkit-input-placeholder {
   color: blue;
 }
-/* line 20, ../sass/helpers.scss */
+/* line 47, ../sass/helpers.scss */
 .placeholder:-moz-placeholder {
   color: blue;
 }
-/* line 21, ../sass/helpers.scss */
+/* line 48, ../sass/helpers.scss */
 .placeholder::-moz-placeholder {
   color: blue;
 }
-/* line 22, ../sass/helpers.scss */
+/* line 49, ../sass/helpers.scss */
 .placeholder:-ms-input-placeholder {
   color: blue;
 }
@@ -56,10 +56,67 @@ code {
   display: -webkit-box;
   height: 64.8px;
   /* Fallback for non-webkit */
+  margin: 0 auto;
   font-size: 18px;
   line-height: 1.2;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@-webkit-keyframes color {
+  /* line 35, example.scss */
+  0% {
+    color: #fff;
+  }
+
+  /* line 38, example.scss */
+  100% {
+    color: #000;
+  }
+}
+@-moz-keyframes color {
+  /* line 35, example.scss */
+  0% {
+    color: #fff;
+  }
+
+  /* line 38, example.scss */
+  100% {
+    color: #000;
+  }
+}
+@-ms-keyframes color {
+  /* line 35, example.scss */
+  0% {
+    color: #fff;
+  }
+
+  /* line 38, example.scss */
+  100% {
+    color: #000;
+  }
+}
+@keyframes color {
+  /* line 35, example.scss */
+  0% {
+    color: #fff;
+  }
+
+  /* line 38, example.scss */
+  100% {
+    color: #000;
+  }
+}
+/* line 45, example.scss */
+.full {
+  border: 4px solid blue;
+  width: 64px;
+}
+
+/* line 50, example.scss */
+.half {
+  border: 4px solid red;
+  width: 32px;
 }
